@@ -1,9 +1,12 @@
 {
   "name": "halal-inventory-tracker",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "generate": "node generate-pages.js",
-    "build": "npm run generate"  // <-- THIS IS THE CRITICAL LINE
+    "build": "npm run generate"
   },
   "dependencies": {
     "csv-parser": "^3.0.0"
