@@ -1,15 +1,11 @@
 {
-  "name": "ihit-new",
+  "name": "halal-inventory-tracker",
   "version": "1.0.0",
-  "main": "generate-pages.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate": "node generate-pages.js",
+    "build": "npm run generate"  // <-- THIS IS THE CRITICAL LINE
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "csv-parser": "^3.2.0"
+    "csv-parser": "^3.0.0"
   }
 }
